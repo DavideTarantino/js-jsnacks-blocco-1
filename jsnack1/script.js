@@ -1,16 +1,19 @@
-let numero1 = document.getElementById("numero1")
-let numero2= document.getElementById("numero2")
-let numero3= document.getElementById("numero3")
-let numero4= document.getElementById("numero4")
-let numero5= document.getElementById("numero5")
-let numero6= document.getElementById("numero6")
-let numero7= document.getElementById("numero7")
-let numero8= document.getElementById("numero8")
-let numero9= document.getElementById("numero9")
-let numero10= document.getElementById("numero10")
+let somma = 0;
 
-function calcola(){
-    document.getElementById("responso").innerHTML = numero1.value + numero2.value + numero3.value + numero4.value + numero5.value + numero6.value + numero7.value + numero8.value + numero9.value + numero10.value
+for (let i = 0; i < 10; i++) {
+    let input = prompt("Inserisci un numero:");
+    
+    // Converte l'input in un numero
+    let numero = parseFloat(input);
+
+    // Verifica se l'input è un numero valido
+    if (!isNaN(numero)) {
+        somma += numero;
+    } else {
+        // Se l'input non è un numero valido, richiede all'utente di inserire nuovamente il numero
+        alert("Inserisci un numero valido.");
+        i--; // Decrementa l'indice per ripetere la stessa iterazione del ciclo
+    }
 }
-
+document.getElementById("responso").innerHTML = ("La somma di tutti i numeri inseriti è:" + somma);
 
