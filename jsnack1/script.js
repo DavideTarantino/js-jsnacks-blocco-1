@@ -1,25 +1,16 @@
-let
-numero1 = prompt("inserisci un numero")
-numero2 = prompt("inserisci il secondo")
-numero3 = prompt("inserisci il terzo")
-numero4 = prompt("inserisci il quarto")
-numero5 = prompt("inserisci il quinto")
-numero6 = prompt("inserisci il sesto")
-numero7 = prompt("inserisci il settimo")
-numero8 = prompt("inserisci l'ottavo")
-numero9 = prompt("inserisci il nono")
-numero10 = prompt("inserisci il decimo")
+let numero1 = document.getElementById("numero1")
+let numero2= document.getElementById("numero2")
+let numero3= document.getElementById("numero3")
+let numero4= document.getElementById("numero4")
+let numero5= document.getElementById("numero5")
+let numero6= document.getElementById("numero6")
+let numero7= document.getElementById("numero7")
+let numero8= document.getElementById("numero8")
+let numero9= document.getElementById("numero9")
+let numero10= document.getElementById("numero10")
 
-document.getElementById("responso1").innerHTML = numero1
-document.getElementById("responso2").innerHTML = numero2
-document.getElementById("responso3").innerHTML = numero3
-document.getElementById("responso4").innerHTML = numero4
-document.getElementById("responso5").innerHTML = numero5
-document.getElementById("responso6").innerHTML = numero6
-document.getElementById("responso7").innerHTML = numero7
-document.getElementById("responso8").innerHTML = numero8
-document.getElementById("responso9").innerHTML = numero9
-document.getElementById("responso10").innerHTML = numero10
-
+function calcola(){
+    document.getElementById("responso").innerHTML = numero1.value + numero2.value + numero3.value + numero4.value + numero5.value + numero6.value + numero7.value + numero8.value + numero9.value + numero10.value
+}
 
 
